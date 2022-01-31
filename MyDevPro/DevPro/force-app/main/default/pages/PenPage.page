@@ -1,0 +1,16 @@
+<apex:page standardController="Parker_Pen__c">
+    <apex:form >
+        <apex:pageBlock title="Customer Deatails">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!Save}" value="Save"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Buyers Details" columns="2">
+                <apex:inputField value="{!Parker_Pen__c.Name}" />
+                <apex:inputField value="{!Parker_Pen__c.Price__c}" />
+                <apex:inputField value="{!Parker_Pen__c.Quantity__c}" />
+                <apex:inputField value="{!Parker_Pen__c.Discount_Info__c}" />
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

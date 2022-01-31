@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Deepak Rajan
+  @group             : 
+  @last modified on  : 07-14-2021
+  @last modified by  : Deepak Rajan
+  Modifications Log 
+  Ver   Date         Author         Modification
+  1.0   07-14-2021   Deepak Rajan   Initial Version
+-->
+<apex:page controller="ArrayExample">
+<apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!myval}" var="a">
+            <apex:column value="{!a}"/>
+        </apex:pageBlockTable>
+    <apex:outputlabel >{!name}</apex:outputlabel>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

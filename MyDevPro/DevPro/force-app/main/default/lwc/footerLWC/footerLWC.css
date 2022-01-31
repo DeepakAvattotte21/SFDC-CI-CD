@@ -1,0 +1,22 @@
+.flex-container {
+  display: flex;
+  background-color: transparent;
+}
+
+.cls-1 {
+    fill: #ed1c24;
+  }
+
+  .cls-2, .cls-3 {
+    fill: #fff;
+    position:sticky;
+    
+  }
+
+  .cls-2 {
+    font-size: 15px;
+    font-family: IntroBold, Intro;
+  }
+  .cls-4{
+    transform: translate(757.57, 80.25);
+  }

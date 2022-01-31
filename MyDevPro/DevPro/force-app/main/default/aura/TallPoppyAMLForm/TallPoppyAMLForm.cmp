@@ -1,0 +1,6 @@
+<aura:component >
+    <h1>Tall Poppy AML Form</h1>
+    AML Detail Page
+    <aura:attribute name="aml" type="AML__c"/>
+	
+</aura:component>

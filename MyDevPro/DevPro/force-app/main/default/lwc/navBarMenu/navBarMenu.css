@@ -1,0 +1,52 @@
+.slds-box{
+    height: 70px;
+    text-align: center;
+    display: flexbox;
+    border-radius: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: whitesmoke;
+    font-family: Intro_Bold;
+    font-size: x-large;
+    color: black;
+}
+.slds-box a{
+    height: 70px;
+    float: left;
+    padding: 15px 10px;
+    align-items: center;
+    font-family: Intro_Bold;
+    color: black;
+}
+.slds-dropdown-trigger_click{
+    float: left;
+}
+.slds-button{
+    height: 70px;
+    float: left;
+    padding: 15px 10px;
+    align-items: center;
+    font-family: Intro_Bold;
+    color: black;
+    border: none;
+}
+
+.slds-dropdown__item{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.slds-dropdown__item a{
+    display: block;
+    float: none;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding: 12px 16px;
+}
+.slds-dropdown__item a:hover{
+    display: block;
+}
+.searchInput{
+    float: right;
+}

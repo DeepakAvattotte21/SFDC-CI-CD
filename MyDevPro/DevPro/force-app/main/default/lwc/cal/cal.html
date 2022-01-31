@@ -1,0 +1,20 @@
+<template>
+    <div class="slds-box" style="background-color: aqua;">
+        <lightning-input type="number" onchange={firstInputChange} value={firstinput} name="Input1" label="Enter First Number" placeholder="Num1"></lightning-input>
+        <lightning-input type="number" onchange={secondInputChange} value={secondinput} name="Input2" label="Enter Second Number" placeholder="Num2"></lightning-input>
+    </div>
+   
+    <div>
+        <lightning-button-group class="slds-button-group" role="group">
+            <lightning-button variant="Brand" label="Addition" title="addition" onclick={add} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="Brand" label="Subtraction" title="subtraction" onclick={sub} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="Brand" label="Multiplication" title="multiplication" onclick={mul} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="Brand" label="Division" title="division" onclick={div} class="slds-m-left_x-small"></lightning-button>
+        </lightning-button-group>
+    </div>
+    <template if:true={showResult}>
+        <div class="sldx-box"> 
+            <p>The Result is = {Result} </p>
+        </div>
+    </template>
+</template>

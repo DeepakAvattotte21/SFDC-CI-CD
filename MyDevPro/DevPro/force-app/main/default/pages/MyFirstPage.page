@@ -1,0 +1,13 @@
+<apex:page standardController="Account">
+   <p>
+       You are viewing the {!account.name} account.
+       
+    </p> 
+    <h1>
+        <b>Congratulations.</b>
+        This is Your Fisrt Page:
+        Hello World.
+    </h1>
+    Hello {! $User.FirstName}!
+    Your Second Name is {! $User.LastName}!
+</apex:page>

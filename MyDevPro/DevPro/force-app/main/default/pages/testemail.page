@@ -1,0 +1,15 @@
+<!--
+  @description       : 
+  @author            : Deepak Rajan
+  @group             : 
+  @last modified on  : 07-14-2021
+  @last modified by  : Deepak Rajan
+  Modifications Log 
+  Ver   Date         Author         Modification
+  1.0   07-14-2021   Deepak Rajan   Initial Version
+-->
+<apex:page standardcontroller="Contact" extensions="TestMailClass">
+<apex:form >
+<apex:commandButton value="send Email!" action="{SendEmail}"/>
+</apex:form>
+</apex:page>

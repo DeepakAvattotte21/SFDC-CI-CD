@@ -1,0 +1,24 @@
+<apex:page controller="SampleClassVF" >
+    <apex:form >
+        <apex:pageBlock title="Block">
+            <apex:pageBlockSection title="Details" columns="3">
+            <apex:outputLabel > Enter Fisrt Name :</apex:outputLabel>
+            <apex:inputText value="{!FirstName}"/>
+            <apex:outputLabel >Enter Last Name :</apex:outputLabel>
+            <apex:inputText value="{!LastName}"/>
+            <apex:outputLabel >Enter Full Name : </apex:outputLabel>
+            <apex:inputText Value="{!FullName}"/>
+            
+            <apex:outputLabel >{!FullName}</apex:outputLabel>
+            <apex:commandButton action="{!MyName}" value="Save"/>
+            
+            
+        </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+        
+        
+        
+    </apex:form>
+    
+</apex:page>

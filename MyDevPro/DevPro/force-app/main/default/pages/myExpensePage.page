@@ -1,0 +1,11 @@
+<apex:page >
+    <h>My Monthly Expenses</h>
+    <apex:pageBlock title="My Expense List">
+        <apex:pageBlockSection title="Travel">
+            Total Travel Expense = 200$
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Food">
+            Total Food Expense = 400$
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,51 @@
+<!--
+  @description       : 
+  @author            : Deepak Rajan
+  @group             : 
+  @last modified on  : 06-28-2021
+  @last modified by  : Deepak Rajan
+  Modifications Log 
+  Ver   Date         Author         Modification
+  1.0   06-28-2021   Deepak Rajan   Initial Version
+-->
+<template>
+    <div class="slds-card">
+          <!--navbar-->
+          <div class="navbar">
+              <a class="logo" href="#" onclick={navToHome}><img src = {tpLogo} width="150" height="150"></a>
+              <a class="report" href="#report">Reports</a>
+              <!--drop down menu-->
+              <div class="dropdown">
+                  <button class="dropbtn">Case
+                      <i class="fa fa-caret-down fa-fw"></i>
+                  </button>
+                  <!--dropdown containers-->
+                  <div class="dropdown-content" style="left:auto;">
+                      <a href="#" onclick={navToReqPage}>Created</a>
+                      <a href="#" onclick={navToProgPage}>In Progress</a>
+                      <a href="#" onclick={navToReviewPage}>In Review</a>
+                      <a href="#" onclick={navToCompletePage}>Completed</a>
+                      <a href="#" onclick={navToAbanPage}>Abandoned</a>
+                  </div>
+              </div>
+              <!--right navigation-->
+              <div class="topnav-right">
+                  <!--searchbox-->
+                  <div class="searchBox">
+                        <input class="searchInput" type="text" name="" placeholder="Search">
+                        <button class="searchButton">
+                            <i class="fa fa fa-search"></i>
+                        </button>
+                  </div>
+                  <!--user menu-->
+                  <div class="dropdown">
+                        <button class="dropbtn"><i class="fa far fa-user fa-fw"></i>User</button>
+                        <div class="dropdown-content">
+                            <a href="#">Profile</a>
+                            <a href="#">Logout<i class="fa fa fa-sign-out fa-fw"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</template>

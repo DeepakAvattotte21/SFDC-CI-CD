@@ -1,0 +1,42 @@
+<apex:page standardController="User" showHeader="false">
+  <h1>Direct-to-Agent Chat with {!user.name}</h1>
+ 
+  <!-- dta_online is displayed whenever the specific agent is available to chat. -->
+  <div id="dta_online" style="display: none;">
+ 
+    <!-- A valid button is required here even though it's direct-to-agent - some button settings still apply. -->
+    <!-- {!left(user.id,15)} is needed to truncate an 18-char ID to the 15-char version that Chat uses. -->
+    <a href="javascript://Chat" onclick="liveagent.startChat('573D01234567890', '{!left(user.id,15)}')">Chat with {!user.name}!</a>
+ 
+  </div>
+ 
+  <!-- dta_offline is displayed if the specific agent is unavailable. -->
+  <div id="dta_offline" style="display: none;">
+ 
+    <!-- button_online is displayed if any agents are available to chat for the button. -->
+    <div id="button_online" style="display: none;">Sorry, {!user.name} is not available. If you&rsquo;d like, you can
+      <a href="javascript://Chat" onclick="liveagent.startChat('573D01234567890')">start a chat with another agent</a>.
+    </div>
+ 
+    <!-- button_offline is displayed if no agents are available to chat for the button. -->
+    <div id="button_offline" style="display: none;">Sorry, all agents (including {!user.name}) appear to be unavailable.</div>
+ 
+  </div>
+ 
+  <!-- Change the domain name to the correct one for your org. -->
+  <script type='text/javascript' src='https://MyDomainName.my.salesforcescrt.com/content/g/deployment.js'></script>
+ 
+  <script type='text/javascript'>
+    /* The following calls pass the user ID as the first argument and show whether the agent is online.*/
+    liveagent.showWhenOnline('{!left(user.id,15)}', document.getElementById('dta_online'));
+    liveagent.showWhenOffline('{!left(user.id,15)}', document.getElementById('dta_offline'));
+ 
+    /* The following calls pass the button ID as the first argument and show whether 
+    any agents are available to handle chats from the button. */
+    liveagent.showWhenOnline('573D01234567890', document.getElementById('button_online'));
+    liveagent.showWhenOffline('573D01234567890', document.getElementById('button_offline'));
+ 
+    /* This domain and the IDs are specific to your org, so replace these with your own. */
+    liveagent.init('https://MyDomainName.my.salesforcescrt.com/chat', '572D01234567890', '00DD01234567890');
+  </script>
+</apex:page>

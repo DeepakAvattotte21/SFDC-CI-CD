@@ -1,0 +1,37 @@
+<!--
+  @description       : 
+  @author            : Deepak Rajan
+  @group             : 
+  @last modified on  : 07-01-2021
+  @last modified by  : Deepak Rajan
+  Modifications Log 
+  Ver   Date         Author         Modification
+  1.0   07-01-2021   Deepak Rajan   Initial Version
+-->
+<template>
+    <div class="slds-box">
+        <div class="slds-grid">
+            <a href="#">Logo</a>
+            <a href="#">Home</a>
+            <a href="#">Reports</a>
+            <!--CaseDropdown Button-->
+        <div class="slds-dropdown-trigger_click">
+            <button class="slds-button">Case<i class="fa fa-caret-down"></i></button>
+            <!--Dropdown Items-->
+            <div class="slds-dropdown__item" style="left:auto;">
+                <a href="#" >Created</a>
+                <a href="#" >In Progress</a>
+                <a href="#" >In Review</a>
+                <a href="#" >Completed</a>
+                <a href="#" >Abandoned</a>
+            </div>
+        </div>
+        <div class="searchBar">
+            <form>
+                <input class="searchInput" type="text" name="Search" placeholder="Search">
+                <button class="btn" type="button"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,104 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Intro_Bold;
+}
+
+.slds-box {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.slds-box a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.slds-box a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.slds-box .search-container {
+  float: right;
+}
+
+.slds-box input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.slds-box .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container:hover {
+  background: #ccc;
+  width: 400px;
+}
+
+.left-dropdown{
+    overflow: hidden;
+    float: left;
+}
+
+.left-dropdown .case-button{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-item{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-item a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .slds-box .search-container {
+    float: none;
+  }
+  .slds-box a, .slds-box input[type=text], .slds-box .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .slds-box input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}

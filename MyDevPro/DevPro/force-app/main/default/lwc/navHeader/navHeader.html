@@ -1,0 +1,49 @@
+<!--
+  @description       : 
+  @author            : Deepak Rajan
+  @group             : 
+  @last modified on  : 06-18-2021
+  @last modified by  : Deepak Rajan
+  Modifications Log 
+  Ver   Date         Author         Modification
+  1.0   06-14-2021   Deepak Rajan   Initial Version
+-->
+<template>
+    <!--top navigation-->
+    <div class="topnav">
+        <a class ="logo" href="#"><img src ={tpLogo}></a>
+        <a href="#report">Report</a>
+        <!--drop down menu-->
+        <div class="dropdown">
+            <button class="dropbtn">Case
+                <i class="fa fa-caret-down fa-fw"></i>
+            </button>
+            <!--dropdown containers-->
+            <div class="dropdown-content">
+                <a href="#">created</a>
+                <a href="#">Inprogress</a>
+                <a href="#">Inreview</a>
+                <a href="#">Completed</a>
+                <a href="#">Abandoned</a>
+            </div>
+        </div>
+        <!--right navigation-->
+        <div class="topnav-right">
+            <!--searchbar-->
+            <div class="searchBox">
+                <input class="searchInput" type="text" name="" placeholder="Search">
+                <button class="searchButton">
+                    <i class="fa fa fa-search"></i>
+                </button>
+            </div>
+            <!--user menu-->
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa far fa-user fa-fw"></i>User</button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Logout<i class="fa fa fa-sign-out fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

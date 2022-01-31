@@ -1,0 +1,36 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 05-26-2021
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+  Modifications Log 
+  Ver   Date         Author                               Modification
+  1.0   05-26-2021   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
+-->
+
+<template>
+    
+    <lightning-record-edit-form object-api-name="Case" record-id="0122w000000e3kBAAQ" onsuccess={handleSuccess}>
+        <div class="slds-m-around_medium">
+            <lightning-input-field field-name='CaseNumber' value={CaseNumber}></lightning-input-field>
+            <lightning-input-field field-name='Subject'></lightning-input-field>
+            <div class="slds-m-top_medium">
+                <lightning-button variant="brand" type="submit" name="save" label="Create Account">
+                </lightning-button>
+           </div>
+       </div>
+    </lightning-record-edit-form>
+
+</template>
+<!--<template>
+    <lightning-record-edit-form object-api-name="Case" onsuccess={handleSuccess}>
+        <lightning-input-field field-name="Case Number" value={CaseNumber}>
+        <lightning-input-field field-name="Last_Name__c">
+            <lightning-button class="slds-m-top__small" type="Submit" label="Save">
+
+            </lightning-button>
+        </lightning-input-field>
+        </lightning-input-field>
+    </lightning-record-edit-form>
+</template>-->
